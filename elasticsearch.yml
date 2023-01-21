@@ -1,0 +1,15 @@
+discovery.type: single-node
+
+node.name: elastic-netology
+
+path.data: /var/lib/data
+
+path.logs: /var/lib/logs
+
+path.repo: /var/lib/elasticsearch/snapshots
+
+network.host: 0.0.0.0
+
+http.port: 9200
+
+xpack.security.enabled: false
