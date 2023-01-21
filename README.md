@@ -40,7 +40,7 @@ EXPOSE 9200 9300
 
 ответ elasticsearch на запрос пути / в json виде
 
-```json
+```bash
 [elasticsearch@f5323d7faa8d /]$ curl http://127.0.0.1:9200
 {
   "name" : "elastic-netology",
@@ -64,7 +64,7 @@ EXPOSE 9200 9300
 Задание 2
 Ознакомтесь с документацией и добавьте в elasticsearch 3 индекса, в соответствии со таблицей:
 
-```json
+```bash
 curl -XPUT "http://localhost:9200/ind-1?pretty" -H 'Content-Type: application/json' -d'{ "settings": { "number_of_shards": 1, "number_of_replicas": 0 } }'
 curl -XPUT "http://localhost:9200/ind-2?pretty" -H 'Content-Type: application/json' -d'{ "settings": { "number_of_shards": 2, "number_of_replicas": 1 } }'
 curl -XPUT "http://localhost:9200/ind-3?pretty" -H 'Content-Type: application/json' -d'{ "settings": { "number_of_shards": 4, "number_of_replicas": 2 } }'
